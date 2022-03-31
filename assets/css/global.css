@@ -1,0 +1,15 @@
+@import url("../font/poppins/style.css");
+@import url("../font/lato/style.css");
+@import url("../lib/fontawesome/css/all.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
