@@ -475,3 +475,9 @@
 .main__catalog {
     margin-bottom: 200px;
 }
+
+.main__previews {
+    background-color: #F5FAFE;
+    padding: 100px 0;
+    margin-bottom: 150px;
+}
