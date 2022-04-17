@@ -55,24 +55,24 @@
                     <a href="#modal:about" class="hero__more btn">
                         More About Us
                     </a>
-                    <div class="modal" id="modal:about">
-                        <div class="modal__body">
-                            <div class="modal__header">
+                    <div id="modal:about" class="modal">
+                        <div class="modal__content">
+                            <header class="modal__header">
                                 <h3 class="modal__title">About us</h3>
-                                <a class="modal__dismiss" href="#modal:dismiss">
-                                    <i class="fa-solid fa-xmark"></i>
+                                <a href="#modal:dismiss" class="modal__close">
+                                    <i class="modal__close-icon fa-solid fa-xmark"></i>
                                 </a>
+                            </header>
+                            <div class="modal__body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dignissimos dolorum neque
+                                odit qui quidem, sunt? Ad aliquam nesciunt officiis sit suscipit. Doloremque eveniet
+                                fugit placeat possimus repellat reprehenderit voluptate.
                             </div>
-                            <div class="modal__content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore exercitationem
-                                libero magnam nobis quis sed. Asperiores autem cupiditate dolorem ducimus ex in
-                                incidunt! Facere maiores nam quas. Fuga, voluptatum.
-                            </div>
-                            <div class="modal__footer">
-                                <a href="#modal:dismiss" class="btn btn--small">
+                            <footer class="modal__footer">
+                                <a href="#modal:dismiss" class="modal__action btn btn--small">
                                     Держи в курсе
                                 </a>
-                            </div>
+                            </footer>
                         </div>
                     </div>
                 </div>
@@ -113,47 +113,28 @@
         <section class="main__catalog">
             <div class="catalog__container container">
                 <div class="catalog__filter">
-                    <a class="catalog__filter-button catalog__filter-button--all" href="#filter:all">All</a>
+                    <a href="#filter:all" class="catalog__filter-btn">All</a>
                     <hr class="catalog__filter-hr">
-                    <a class="catalog__filter-button catalog__filter-button--red" href="#filter:red">Red</a>
-                    <a class="catalog__filter-button catalog__filter-button--green" href="#filter:green">Green</a>
-                    <a class="catalog__filter-button catalog__filter-button--blue" href="#filter:blue">Blue</a>
+                    <a href="#filter:red" class="catalog__filter-btn">Red</a>
+                    <a href="#filter:green" class="catalog__filter-btn">Green</a>
+                    <a href="#filter:blue" class="catalog__filter-btn">Blue</a>
                 </div>
                 <div class="catalog__items">
-                    <a class="catalog__target" id="filter:red">R</a>
-                    <a class="catalog__target" id="filter:green">G</a>
-                    <a class="catalog__target" id="filter:blue">B</a>
+                    <a class="catalog__target" href="" id="filter:red"></a>
+                    <a class="catalog__target" href="" id="filter:green"></a>
+                    <a class="catalog__target" href="" id="filter:blue"></a>
 
-                    <div data-filter="red" class="catalog__item">
-                        <img src="assets/img/catalog/red-1.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="green" class="catalog__item">
-                        <img src="assets/img/catalog/green-1.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="red" class="catalog__item">
-                        <img src="assets/img/catalog/red-2.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="blue" class="catalog__item">
-                        <img src="assets/img/catalog/blue-1.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="red" class="catalog__item">
-                        <img src="assets/img/catalog/red-3.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="green" class="catalog__item">
-                        <img src="assets/img/catalog/green-2.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="blue" class="catalog__item">
-                        <img src="assets/img/catalog/blue-2.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="green" class="catalog__item">
-                        <img src="assets/img/catalog/green-3.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="blue" class="catalog__item">
-                        <img src="assets/img/catalog/blue-3.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
-                    <div data-filter="red" class="catalog__item">
-                        <img src="assets/img/catalog/red-4.jpg" alt="catalog img" class="catalog__item-img">
-                    </div>
+                    <img src="assets/img/catalog/red-1.jpg" alt="item" class="catalog__item catalog__item--red">
+                    <img src="assets/img/catalog/green-1.jpg" alt="item" class="catalog__item catalog__item--green">
+                    <img src="assets/img/catalog/blue-1.jpg" alt="item" class="catalog__item catalog__item--blue">
+                    <img src="assets/img/catalog/red-2.jpg" alt="item" class="catalog__item catalog__item--red">
+                    <img src="assets/img/catalog/green-2.jpg" alt="item" class="catalog__item catalog__item--green">
+                    <img src="assets/img/catalog/blue-2.jpg" alt="item" class="catalog__item catalog__item--blue">
+                    <img src="assets/img/catalog/red-3.jpg" alt="item" class="catalog__item catalog__item--red">
+                    <img src="assets/img/catalog/green-3.jpg" alt="item" class="catalog__item catalog__item--green">
+                    <img src="assets/img/catalog/blue-3.jpg" alt="item" class="catalog__item catalog__item--blue">
+                    <img src="assets/img/catalog/red-4.jpg" alt="item" class="catalog__item catalog__item--red">
+                    <img src="assets/img/catalog/blue-4.jpg" alt="item" class="catalog__item catalog__item--blue">
                 </div>
             </div>
         </section>
@@ -188,29 +169,9 @@
                         </a>
                     </div>
                 </div>
-                <a href="#modal:guides" class="guides__full btn">
+                <a href="#" class="guides__full btn">
                     Sell Full Guidelines
                 </a>
-                <div class="modal" id="modal:guides">
-                    <div class="modal__body">
-                        <div class="modal__header">
-                            <h3 class="modal__title">Guides</h3>
-                            <a class="modal__dismiss" href="#modal:dismiss">
-                                <i class="fa-solid fa-xmark"></i>
-                            </a>
-                        </div>
-                        <div class="modal__content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore exercitationem
-                            libero magnam nobis quis sed. Asperiores autem cupiditate dolorem ducimus ex in
-                            incidunt! Facere maiores nam quas. Fuga, voluptatum.
-                        </div>
-                        <div class="modal__footer">
-                            <a href="#modal:dismiss" class="btn btn--small">
-                                Держи в курсе
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <section class="main__featured">
@@ -351,37 +312,27 @@
                 </div>
             </div>
         </section>
-        <section class="main__previews">
-            <div class="previews__container container">
-                <div class="previews__slider">
-                    <div class="slider__slides">
-                        <div id="slide:1" class="slider__slide">
-                            <img class="slider__img" src="assets/img/catalog/blue-4.jpg" alt="slide">
-                        </div>
-                        <div id="slide:2" class="slider__slide">
-                            <img class="slider__img" src="assets/img/catalog/red-3.jpg" alt="slide">
-                        </div>
-                        <div id="slide:3" class="slider__slide">
-                            <img class="slider__img" src="assets/img/catalog/green-3.jpg" alt="slide">
-                        </div>
-                        <div id="slide:4" class="slider__slide">
-                            <img class="slider__img" src="assets/img/catalog/blue-3.jpg" alt="slide">
-                        </div>
-                    </div>
-                    <div class="slider__controls">
-                        <a href="#slide:1" class="slider__control">
-                            <img class="slider__thumb" src="assets/img/catalog/blue-4.jpg" alt="slider thumb">
-                        </a>
-                        <a href="#slide:2" class="slider__control">
-                            <img class="slider__thumb" src="assets/img/catalog/red-3.jpg" alt="slider thumb">
-                        </a>
-                        <a href="#slide:3" class="slider__control">
-                            <img class="slider__thumb" src="assets/img/catalog/green-3.jpg" alt="slider thumb">
-                        </a>
-                        <a href="#slide:4" class="slider__control">
-                            <img class="slider__thumb" src="assets/img/catalog/blue-3.jpg" alt="slider thumb">
-                        </a>
-                    </div>
+        <section class="main__slider">
+            <div class="slider__container container">
+                <div class="slider__holder">
+                    <img id="slide:1" class="slider__slide" src="assets/img/catalog/blue-1.jpg" alt="slide img">
+                    <img id="slide:2" class="slider__slide" src="assets/img/catalog/blue-2.jpg" alt="slide img">
+                    <img id="slide:3" class="slider__slide" src="assets/img/catalog/blue-3.jpg" alt="slide img">
+                    <img id="slide:4" class="slider__slide" src="assets/img/catalog/blue-4.jpg" alt="slide img">
+                </div>
+                <div class="slider__controls">
+                    <a class="slider__control" href="#slide:1">
+                        <img class="slider__control-thumb" src="assets/img/catalog/blue-1.jpg" alt="slide thumb">
+                    </a>
+                    <a class="slider__control" href="#slide:2">
+                        <img class="slider__control-thumb" src="assets/img/catalog/blue-2.jpg" alt="slide thumb">
+                    </a>
+                    <a class="slider__control" href="#slide:3">
+                        <img class="slider__control-thumb" src="assets/img/catalog/blue-3.jpg" alt="slide thumb">
+                    </a>
+                    <a class="slider__control" href="#slide:4">
+                        <img class="slider__control-thumb" src="assets/img/catalog/blue-4.jpg" alt="slide thumb">
+                    </a>
                 </div>
             </div>
         </section>

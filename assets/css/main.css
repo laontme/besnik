@@ -1,5 +1,6 @@
 @import url("global.css");
-@import url("features.css");
+@import url("blind.css");
+/*@import url("features.css");*/
 
 .container {
     width: 1366px;
@@ -476,7 +477,7 @@
     margin-bottom: 200px;
 }
 
-.main__previews {
+.main__slider {
     background-color: #F5FAFE;
     padding: 100px 0;
     margin-bottom: 150px;
